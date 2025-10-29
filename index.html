@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pokémon Guessing Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- <h1>Who is that Pokémon ?</h1> -->
+    <img
+      src="./images/who_is_that_pokemon.png"
+      alt="pokemon-font"
+      width="500"
+      class="test"
+    />
+    <img id="pokemon-image" width="200" class="dark-mode" /><br />
+    <input id="guess" placeholder="Your guess..." />
+    <div id="button-container">
+      <button id="checkGuess">Submit</button>
+      <button id="dark-mode">Dark/Light mode</button>
+    </div>
+
+    <p id="result"></p>
+    <p id="attempts"></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>

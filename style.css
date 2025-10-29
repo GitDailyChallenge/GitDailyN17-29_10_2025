@@ -1,0 +1,70 @@
+#guess {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin-right: 1rem;
+  width: 200px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+#guess:hover {
+  outline: none;
+  border-color: #e94560;
+  box-shadow: 0 0 5px rgba(233, 69, 96, 0.5);
+}
+#button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+button {
+  background: #e94560;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  margin: 2px 5px;
+  color: #fff;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #d7374c;
+}
+#result {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+/* #pokemon-image {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+} */
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#attempts {
+  font-size: 1rem;
+  margin-top: 1rem;
+  display: none;
+}
+.dark-mode {
+  filter: brightness(0);
+  transition: filter 0.5s;
+}
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+p {
+  font-family: "Press Start 2P", system-ui;
+}
