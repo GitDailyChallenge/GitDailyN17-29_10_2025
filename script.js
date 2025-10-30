@@ -9,7 +9,6 @@ const darkModeButton = document.getElementById("dark-mode");
 const pokemonImage = document.getElementById("pokemon-image");
 
 darkModeButton.addEventListener("click", () => {
-  console.log("toggled");
   pokemonImage.classList.toggle("dark-mode");
 });
 
@@ -36,6 +35,7 @@ async function getAllFrenchPokemon() {
 }
 
 function displayPokemon() {
+  pokemonImage.classList.add("dark-mode");
   result.textContent = "";
   document.getElementById("guess").value = "";
   const pokemons = [];
@@ -62,7 +62,7 @@ function checkGuess() {
   }
   numberOfAttempts++;
   attemptsDisplay.textContent = `Attempts: ${numberOfAttempts}, Failed: ${failedAttempts}`;
-
+  pokemonImage.classList.toggle("dark-mode");
   setTimeout(displayPokemon, 2000);
 }
 function normalizeName(name) {
